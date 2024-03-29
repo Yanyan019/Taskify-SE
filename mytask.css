@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+/*NAKA COLUMN NA NAV LINKS AT LOGO*/
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid black;
+    padding: 20px;
+    min-height: 100vh;
+}
+.column h1 {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+nav ul {
+    list-style: none;
+    padding: 5px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: "Fredoka", sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+nav ul li a.active {
+    border-bottom: 1px solid black;
+}
+nav ul li {
+    padding: 10px;
+}
+
+/*RIGHT SIDE TOP*/
+
+.row_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px 0 0 50px;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.searchbox{
+    border: 1px solid black;
+    padding: 10px 0 10px 15px;
+    width: 500px;
+    border-radius: 25px;
+    display: flex;
+    gap: 10px;
+}
+.searchbox a i {
+    color: black;
+}
+.searchbox input{
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 500px;
+}
+.searchbox input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+.icons_top{
+    margin-left: 20px;
+}
+.icons_top a{
+    margin-right: 10px;
+}
+.icons_top a i{
+    color: black;
+}
+
+/* BOTTOM OF MY TASK*/
+.mytask_container{
+    font-family: "Fredoka", sans-serif;
+}
+.mytask_container p{
+    font-size: 24px;
+    margin: 50px 0 0 0;
+}
+.tasks_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 15px 15px 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 15px;
+    gap: 1rem;
+    cursor: pointer;
+}
+.tasks_container label{
+    cursor: pointer;
+}
+.add_button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+    font-family: "Fredoka", sans-serif;
+}
+.add_task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.addnew button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 12px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.addnew button span{
+    font-size: 14px;
+    font-family: "Fredoka", sans-serif;
+}
+
+
+.task_container {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.task_container h3{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Fredoka", sans-serif;
+    margin: 50px 0 0 0;
+}
+.list_container input{
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 10px 8px 10px;
+    width: 300px;
+    outline: none;
+}
+.list_container button{
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 10px 8px 10px;
+    cursor: pointer;
+}
+
+/* Custom CSS styles for delete and edit buttons */
+.delete-btn, .edit-btn {
+    background-color: #ff6347; /* Coral color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.delete-btn:hover, .edit-btn:hover {
+    background-color: #cc4b37; /* Darker coral color on hover */
+}
