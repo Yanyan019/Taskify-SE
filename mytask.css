@@ -1,7 +1,9 @@
-* {
+*{
     margin: 0;
 }
-
+body{
+    font-family: "Fredoka", sans-serif;
+}
 .container {
     display: flex;
 }
@@ -85,96 +87,59 @@ nav ul li {
     color: black;
 }
 
-/* BOTTOM OF MY TASK*/
-.mytask_container{
-    font-family: "Fredoka", sans-serif;
-}
-.mytask_container p{
-    font-size: 24px;
-    margin: 50px 0 0 0;
-}
-.tasks_container{
+
+/***** MY TASK INAMERS *******/
+.task_list{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px 15px 15px 25px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 15px;
-    gap: 1rem;
-    cursor: pointer;
-}
-.tasks_container label{
-    cursor: pointer;
-}
-.add_button{
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px 10px 10px 10px;
-    font-size: 14px;
-    font-family: "Fredoka", sans-serif;
+    flex-direction: column;
+    padding: 50px 0 15px 0;
 }
 .add_task{
+    margin: 20px 0 0 0;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 0 5px 0;
+}
+
+.add_task input{
+    width: 400px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+}
+#addTaskBtn{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 30px;
+    border-left: 1px solid black;
+}
+#addTaskBtn i{
+   padding: 5px;
+}
+
+
+.task_list ul{
+    list-style: none;
+    padding: 20px 0 0 0;
+}
+.task_list li {
+    font-size: 17px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5px; /* Add margin bottom for spacing */
+    border: 1px solid black;
     padding: 15px;
+    border-radius: 15px;
 }
-.addnew button{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 5px 10px 5px 10px;
-    border-radius: 12px;
-    border: 1px solid black;
-    cursor: pointer;
+.task_list input[type="checkbox"]{
+    margin-right: 10px;
 }
-.addnew button span{
-    font-size: 14px;
-    font-family: "Fredoka", sans-serif;
+.task_list label {
+    flex-grow: 1; /* Allow label to grow to fill available space */
 }
-
-
-.task_container {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.task_container h3{
-    font-size: 24px;
-    font-weight: 500;
-    font-family: "Fredoka", sans-serif;
-    margin: 50px 0 0 0;
-}
-.list_container input{
+.task_list button {
     border: none;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 8px 10px 8px 10px;
-    width: 300px;
-    outline: none;
-}
-.list_container button{
-    border: none;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 8px 10px 8px 10px;
-    cursor: pointer;
-}
-
-/* Custom CSS styles for delete and edit buttons */
-.delete-btn, .edit-btn {
-    background-color: #ff6347; /* Coral color */
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-left: 5px;
-}
-
-.delete-btn:hover, .edit-btn:hover {
-    background-color: #cc4b37; /* Darker coral color on hover */
+    background: transparent;
 }
